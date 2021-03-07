@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Querido Jony, este es mi version de la landing 
+page para el podcast, como se me hacia algo aburrida
+la parte de los episodiosle mande una mini animacion 
+para hacerlo mas chevere.-->
+
+<!--aclaro que no lo programe yo, ya que no se hacerlo
+pero busque un codigo y lo modifique para que trabaje
+como yo queria-->
+
+<!--No se si se valian media queries, pero se me ropia 
+todo el header y no lograba ajustarlo totalmente como
+queria, entonces le mande una y me solucione la vida-->
+
+<!--creditos de la animacion para
+MagtimusPro
+link: https://www.youtube.com/channel/UCgY6raSf9MhsMjXwmG83-Bg-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----------------estilos------------------>
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/3504e2dcd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-----------------titulo------------------->
+    <title>Reto 2</title>
+    <meta name="description" content="Welcome to the jungle" />
+    <meta name="keywords" content="el perro, podcast, podcaster, spotify, ivox, google podcast" />
+    <meta name="author" content="Fernando Montes De Oca"/>
+    <meta name="copyright" content="Fernando2021">
+    <!-------------------favicon------------------->
+    <link rel="icon" href="imagenes/favicon.svg" type="icon/svg"/>
+    <!-------------------ROBOTS--------------------->
+    <meta name="robots" content="index nofollow"/>
+    <!----------informacion para facebook----------->
+    <meta property="og:title" content="El Perro Podcaster" />
+    <meta property="og:description" content="este podcast tiene como objetivo contar mis experiencias en el mundo de
+    la tecnologia y la programacion. No tiene como fin enseñar algo en particular pero aspiro poder dejarles algo 
+    a traves de mis experiencias" />
+    <meta property="og:type" content="podcast" />
+    <meta property="og:image" content="imagenes/perro-podcast-logo"/>
+    <meta property="og:url" content="https://elperropodcaster.web.app" />
+    <!----------informacion para twitter------------>
+    <meta property="twitter:url" content="https://elperropodcaster.web.app" />
+    <meta property="twitter:title" content="El Perro Podcaster" />
+    <meta property="twitter:image" content="imagenes/perro-podcast-logo" />
+    <meta property="twitter:type" content="podcast" />
+</head>
+<body>
+    <header>
+        <div class="fondo">
+            <img src="imagenes/montañita.jpg" alt="fondo">
+            <div class="cabeza">
+                <div class="logo">
+                    <a href="https://welcomehackfer.web.app/" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" class="border-radius" alt="logo">
+                    </a>
+                </div>
+                <div itemtype="audio" class="audio">
+                    <span itemprop="audio"><audio src="audio/podcast1.mp3" preload="auto" controls></audio></span>
+                </div>
+                <nav class="redes">
+                    <ul>
+                        <li>
+                            <a itemprop="url" href="repoductor.html" target="_blank">
+                                <img src="imagenes/spotify(1).svg" class="podcast" alt="spotify">
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="repoductor.html" target="_blank">
+                                <img src="imagenes/ivoox.jfif" class="podcast border-radius" alt="ivoox">
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="repoductor.html" target="_blank">
+                                <img src="imagenes/googleP.jfif" class="podcast border-radius" alt="google podcast">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!---------------aca arranca el contendor flex de los episodios------------>
+    <section itemscope itemtype="URL canónica: http://schema.org/PodcastSeason" class="temporada">
+        <!--<section class="titulo">
+        <span itemprop="seasonNumber" class="h1">
+            <h1>Temporada 1</h1>
+        </span>
+        </section>-->
+        <section itemscope itemtype="https://schema.org/PodcastSeason" id="covers">
+            <div class="card">
+                <div class="cover cover1">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="banner1">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 1</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover2">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="banner2">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 2</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover3">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="banner3">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 3</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover4">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="banner4">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 4</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover5">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="banner5">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 5</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover6">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="banner6">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 6</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover7">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="banner7">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 7</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover8">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="banner8">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 8</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover9">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="Banner9">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 9</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover10">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="Banner10">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 10</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover11">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="Banner11">
+                        <p>
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 11</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cover cover12">
+                    <a itemprop="url" href="repoductor.html" target="_blank">
+                        <img src="imagenes/perro-podcast-logo.png" alt="Banner12">
+                        <p itemprop="episode">
+                            <i class="far fa-play-circle"></i>
+                        </p>
+                    </a>
+                </div>
+                <div class="texto">
+                    <p itemprop="episode" class="cap-num">Capitulo 12</p>
+                    <p class="description">Este es un podcast sobre un perro que queria ser podcaster,
+                        entonces empezó a ladrar y ladrar, hasta que se volvio podcaster.Fin.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer itemscope itemtype="https://schema.org/PodcastSeason" >
+        <div class="barra-footer">
+            <p itemprop="copyrightNotice">Derechos reservados <span itemprop="author">Fernando</span> 2021</p>
+        </div>
+        
+    </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+    apiKey: "AIzaSyCwebvxVWL91VYDDFxwN1sVNEwm2YDqnyE",
+    authDomain: "reto1-f217b.firebaseapp.com",
+    projectId: "reto1-f217b",
+    storageBucket: "reto1-f217b.appspot.com",
+    messagingSenderId: "397270398104",
+    appId: "1:397270398104:web:6650d7e148603d46eb0ced",
+    measurementId: "G-J1HDYHK7VQ"
+    };
+  // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+</body>
+</html>
